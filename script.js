@@ -10,6 +10,7 @@ menu.addEventListener("click", () => {
   toggleMenuIcon();
 });
 function toggleMenuIcon() {
+<<<<<<< HEAD
   const menuIcon = document.querySelector("#menu-icon");
   if (menuIcon.classList.contains("fa-bars")) {
     menuIcon.classList.remove("fa-bars");
@@ -21,6 +22,17 @@ function toggleMenuIcon() {
 }
 
 
+=======
+  if (menu.classList.contains("bx-menu")) {
+    menu.classList.remove("bx-menu");
+    menu.classList.add("bx-x");
+  } else {
+    menu.classList.remove("bx-x");
+    menu.classList.add("bx-menu");
+  }
+}
+
+>>>>>>> 87e5ca010b95818a4fdd4e80237b7549469214dc
 window.addEventListener("scroll", () => {
   header.classList.toggle("shadow", window.scrollY > 0);
 });

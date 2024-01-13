@@ -1,5 +1,6 @@
 # Portfólio Pessoal
 
+<<<<<<< HEAD
 ## Linguagens e ferramentas  usadas
 <div >
     <img align="center" alt="css" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
@@ -11,6 +12,19 @@
 ![Portfólio](https://github.com/Marcos-Gabriell/Portif-lio-/blob/main/img/projec.png)
 
 Bem-vindo ao meu portfólio pessoal, onde você pode conhecer um pouco mais sobre mim, minhas habilidade, meus serviços, meus projetos e como entrar em contato comigo.
+=======
+![Portfólio](https://github.com/Marcos-Gabriell/Portif-lio-/blob/main/img/projec.png)
+
+Bem-vindo ao meu portfólio pessoal, onde você pode conhecer um pouco mais sobre mim, meus serviços, meus projetos e como entrar em contato comigo.
+
+## Tecnologias Utilizadas
+
+Neste projeto, utilizei as seguintes tecnologias:
+
+- HTML
+- CSS
+- JavaScript
+>>>>>>> 87e5ca010b95818a4fdd4e80237b7549469214dc
 
 ## Acesse o Projeto
 
