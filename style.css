@@ -450,7 +450,6 @@ body.active .percent-bar {
 
 /* Estilize as imagens dos projetos */
 .projeto img {
-<<<<<<< HEAD
     max-width: 450px; /* Aumente o valor da largura máxima */
     height: auto;
     width: 100%;
@@ -459,15 +458,6 @@ body.active .percent-bar {
 
 
 
-=======
-    max-width: 450px;
-    max-height: auto;
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s, filter 0.3s; /* Adicione uma transição para o filtro */
-}
-
->>>>>>> 87e5ca010b95818a4fdd4e80237b7549469214dc
 /* Estilize a div de tecnologias */
 .tecnologias {
     position: absolute;
@@ -596,11 +586,7 @@ body.active .services-box:hover h3 {
 
 .services-box .bx {
     padding-top: 2rem;
-<<<<<<< HEAD
     font-size: 44px;
-=======
-    font-size: 54px;
->>>>>>> 87e5ca010b95818a4fdd4e80237b7549469214dc
     color: var(--main-color);
 }
 body.active .services-box .bx {
@@ -727,15 +713,11 @@ body.active form textarea::placeholder {
 }
 
 .copyright a {
-<<<<<<< HEAD
     color: #fff;
 }
 
 .copyright a:hover  {
     color: var(--text-color);
-=======
-    color: #22cf91;
->>>>>>> 87e5ca010b95818a4fdd4e80237b7549469214dc
 }
 
 @media (max-width: 991px) {
@@ -860,7 +842,6 @@ body.active form textarea::placeholder {
     .contact-button {
         margin-left: 25%;
     }
-<<<<<<< HEAD
 }
 
 
@@ -906,6 +887,3 @@ body.active form textarea::placeholder {
     }
   }
   
-=======
-}
->>>>>>> 87e5ca010b95818a4fdd4e80237b7549469214dc
