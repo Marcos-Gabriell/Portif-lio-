@@ -4,7 +4,6 @@ let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
-// Adicione um evento de clique ao ícone do menu
 menu.addEventListener("click", () => {
   navbar.classList.toggle("active"); // Alternar a classe 'active' na navbar
   toggleMenuIcon();
