@@ -13,12 +13,18 @@
 
 :root {
     --main-color: #055e05;
-    --bg-color: #fff;
-    --text-color: #0f0c27;
+    --bg-color: #141414; /* Tema escuro por padrão */
+    --text-color: #fff;
     --hover: rgba(2, 166, 70);
     --big-font: 3.2rem;
     --medium-font: 1.8rem;
     --p-font: 0.941rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s; /* Suaviza a troca de tema */
 }
 
 section {
@@ -28,33 +34,35 @@ section {
 #darkmode {
     font-size: 22px;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
+/* Tema claro */
+body.light-mode {
+    --bg-color: #fff;
+    --text-color: #0f0c27;
+}
 
-body {
-    background: var(--bg-color);
+body.light-mode .social a {
     color: var(--text-color);
 }
-body.active {
-    background: #141414; /* Cor de fundo para o dark mode */
-    color: #fff; /* Cor do texto para o dark mode */
-}
-body.active .social a {
-    color: #fff; /* Cor dos ícones no modo escuro */
-}
 
-body.active .social a:hover {
-    color: var(--main-color); /* Cor dos ícones no modo escuro */
-}
-/* Outros estilos para o dark mode */
+/* Estilos para elementos no dark mode */
 .dark-mode-element {
-    background: #ffffff; /* Exemplo de cor de fundo para elementos no dark mode */
-    color: #ccc; /* Exemplo de cor de texto para elementos no dark mode */
+    background: #ffffff; /* Cor de fundo */
+    color: #ccc; /* Cor do texto */
 }
 
-body.active #darkmode {
-    color: #000000; /* Cor do ícone no modo escuro */
+/* Ícones de redes sociais */
+.social a {
+    color: var(--text-color);
+    transition: color 0.3s;
 }
+
+.social a:hover {
+    color: var(--main-color);
+}
+
 
 *::selection {
     color: var(--bg-color);
@@ -341,6 +349,7 @@ header {
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0;
+    color: var(--main-color); 
 }
 
 .heading h2 {
