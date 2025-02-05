@@ -274,11 +274,7 @@ header {
 
 
 
-.about-img img {
-    width: 80%;
-    border-radius: 0.7rem;
-}
-
+/* Seção "Sobre Mim" */
 .about-text p {
     font-size: var(--p-font);
     font-weight: 550;
@@ -286,6 +282,7 @@ header {
     animation: slideIn 1s ease-in-out forwards;
 }
 
+/* Estilo para a parte da citação */
 .about-text p span {
     font-size: 1.1rem;
     font-weight: 600;
@@ -299,21 +296,33 @@ header {
 
 
 
-.information {
-    margin: 1rem 0 1.4rem;
+/* Botão de download */
+.about-text a.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #055e05;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
-.information .info-box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.4rem;
+.about-text a.btn:hover {
+    background-color: #047404; /* Cor de fundo ao passar o mouse */
 }
 
-.information .info-box span {
-    font-weight: 400;
-    margin-left: 1rem;
+.about-img img {
+    width: 80%;
+    border-radius: 0.7rem;
+    transition: all 0.3s ease; /* Adicionando transição suave */
 }
 
+body.active .about-img img {
+    filter: brightness(0.6); /* Escurece a imagem no modo escuro */
+}
 
   
 .skills-container {
@@ -329,28 +338,42 @@ header {
     justify-content: center; /* Alinha o conteúdo ao centro */
     align-items: center;
     padding: 1rem 0;
-    background-color: #f0f0f0; /* Cor de fundo opcional para destaque */
+    background-color: var(--bg-color); /* Cor de fundo */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    transition: transform 0.3s ease; /* Efeito de hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Transição suave */
 }
 
 .bars-box:hover {
-    transform: scale(1.05); /* Aumenta um pouco o item ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o item ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+    background-color: var(--hover-bg); /* Altera a cor de fundo no hover */
+    color: var(--hover-text-color); /* Altera a cor do texto no hover */
 }
 
 .bars-box i {
     font-size: 40px; /* Tamanho do ícone */
     color: var(--main-color); /* Cor do ícone */
     margin-right: 1rem; /* Espaçamento entre o ícone e o texto */
+    transition: color 0.3s ease; /* Transição suave na cor do ícone */
+}
+
+.bars-box:hover i {
+    color: var(--hover-text-color); /* Cor do ícone quando o mouse passar */
 }
 
 .bars-box h3 {
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0;
-    color: var(--main-color); 
+    color: var(--main-color); /* Cor do texto */
+    transition: color 0.3s ease; /* Transição suave na cor do texto */
 }
+
+.bars-box:hover h3 {
+    color: var(--hover-text-color); /* Cor do texto quando o mouse passar */
+}
+
 
 .heading h2 {
     font-size: 2.5rem;
@@ -774,9 +797,7 @@ body.active form textarea::placeholder {
         font-size: 0.9rem;
         font-weight: 500;
     }
-    .information .info-box span {
-        font-size: 1rem;
-    }
+
     .contact-form form {
         width: 300px;
     }
